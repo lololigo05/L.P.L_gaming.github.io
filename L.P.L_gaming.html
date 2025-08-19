@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Télécharger mon application</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            text-align: center;
+            padding-top: 80px;
+            position: relative;
+            overflow: hidden;
+        }
+        .background-blur {
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw; height: 100vh;
+            background: url('banniere.png') center/cover no-repeat;
+            filter: blur(12px) brightness(0.8);
+            z-index: 0;
+        }
+        .container {
+            background: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            position: relative;
+            z-index: 1;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .download-btn {
+            background: #2e86de;
+            color: #fff;
+            padding: 16px 40px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+        .download-btn:hover {
+            background: #1b4f72;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-blur"></div>
+    <div class="container">
+        <h1>Téléchargez mon application Android</h1>
+        <p>
+            Cliquez sur le bouton ci-dessous pour télécharger l’APK de l’application.<br>
+            N’oubliez pas d’activer l’installation d’applications depuis des sources inconnues dans les paramètres de votre téléphone.
+        </p>
+        <a href="c:\Users\loris\Downloads\LPL_gaming (22).apk" class="download-btn" download>
+            Télécharger l’APK
+        </a>
+        <img src="L.P.L logo fond noir.png" alt="L.P.L Logo" style="display:block; margin:40px auto 0;">
+    </div>
+</body>
+</html>
